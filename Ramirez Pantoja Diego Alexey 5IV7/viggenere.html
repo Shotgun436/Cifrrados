@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+        <title>Vigenére</title>
+</head>
+
+<body>
+    <header class="header1">
+        <div class="contenedor head">
+            <h1 class="titulo">Vigenere</h1>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor">
+      <div style="height: 70px;">
+        <ul class="nav nav-tabs">
+          
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Volver</a>
+            </li>
+        
+        </ul>
+    </div>
+    
+    <table class="noborder">
+        <tbody>
+            <tr>
+                <td><label for="text"></label></td>
+                <br>
+                <td><textarea id="text" cols="50" rows="10"
+                        style="width:30em; height:7em"> </textarea></td>
+            </tr>
+            <tr>
+                <td><label for="key">Llave:    </label></td>
+                <p></p>
+                <td><input type="text"  id="key" style="width:10em" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="app.doCrypt(false);">Cifrar</button>
+                    <button onclick="app.doCrypt(true);">Descifrar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+</main>
+
+</body>
+<script src="js/viggenere.js"></script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="js/cesar.js"></script>
+	<title>CIFRADO CESAR</title>
+
+</head>
+
+<body>
+    <a class="nav-link" href="index.html">Volver</a>
+
+
+	<body bgcolor="#9C640C">
+		<header>
+			<div class="contenedor">
+				<div id="marca">
+					<center>
+						<h1><span class="resaltado">CIFRADO</span> CESAR</h1>
+					</center>
+
+
+				</div>
+
+			</div>
+		</header>
+
+		<section id="cajas">
+			<div class="contenedor">
+				<div class="caja">
+					<textarea id="cadena" class="cuadro" onkeypress="return validar_cadena(event)"></textarea>
+					<textarea id="semilla" class="cuadro" onkeypress="return validar_semilla(event)"></textarea>
+
+					<p><input type="button" value="Cifrar" onclick="validar_cifrado()">
+						<input type="button" value="Descifrar" onclick="validar_descifrado()">
+					</p>
+
+
+					<div id="resultado"></div>
+	</body>
+
+
+</html>
